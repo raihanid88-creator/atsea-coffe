@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atsea Coffe</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div id="beranda" class="container mt-3 bg-light p-4 rounded border">
+        <span class="badge bg-succes mb-2">Open Daily</span>
+        <h1 class="text-succes">Atsea Coffe</h1>
+        <p class="lead">Selamat Datang Di Atsea Coffe - Ruang santai untuk ngopi, ngobrol, dan nemenin hari kamu.</p>
+        <p class="text-muted small">Racikan kopi susu gula aren, teh pilihan, dan cemilan hangat siap menemani.</p>
+        <a href="#daftar-menu" class="btn btn-danger">Lihat Menu</a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+           <a class="navbar-brand" href="#">Atsea Coffe</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+           data-bs-target="#menuNavigasi" aria-controls="menuNavigasi"
+           aria-expanded="false" aria-label="buka atau tutup navigasi">
+           <span class="navbar-toggler-icon"></span>
+           </button>
+
+           <div class="collapse navbar-collapse" id="menuNavigasi">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#beranda">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#daftar-menu">Daftar Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pesanan">Pesanan</a>
+                </li>
+            </ul>
+           </div>
+        </div>
+    </nav>
+    <div class="container mt-4" id="daftar-menu">
+        <h2 class="text-center mb-4">Daftar Menu</h2>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Kopsus Desire</h5>
+                        <p class="card-text">1 Shoot Espresso Dicampur Susu Dengan Gula Aren</p>
+                        <p class="fw-bold">17.000</p>
+                        <button type="button" class="btn btn-primary" onclick="pilihcard('Kopsus Desire', 'Rp.17.000')">Pilih Menu</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Thai Tea</h5>
+                        <p class="card-text">Seduhan Teh Hitam Pekat Dengan Susu Dan Gula</p>
+                        <p class="fw-bold">15.000</p>
+                        <button type="button" class="btn btn-primary" onclick="pilihcard('Thai Tea', 'Rp.15.000')">Pilih Menu</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Choco Banana</h5>
+                        <p class="card-text">Perpaduan Coklat dengan syrup Pisang yang Creamy</p>
+                        <p class="fw-bold">15.000</p>
+                        <button type="button" class="btn btn-primary" onclick="pilihcard('Choco Banana', 'Rp.15.000')">Pilih Menu</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Mix Plater</h5>
+                        <p class="card-text">Cemilah Gurih Teman Ngopi</p>
+                        <p class="fw-bold">10.000</p>
+                        <button type="button" class="btn btn-primary" onclick="pilihcard('Mix Plater', 'Rp.10.000')">Pilih Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4" id="pesanan">
+        <div class="row">
+            <div class="col-4 bg-light p-3 border">
+                <h5>Kategori Menu</h5>
+                <p>Coffe, Tea, Signatue, Snack</p>
+                <hr>
+                <h6>Informasi Pesanan   </h6>
+                <p id="hasilmenu" class="fw-bold text-succes mt-2">Belum ada menu yang dipilih. Silahkan tekan tombol Pilih Menu.</p>
+            </div>
+        </div>
+    </div>
+    <script src="proses_uts.js"></script>
+    <script src="bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
