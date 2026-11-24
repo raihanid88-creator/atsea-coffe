@@ -3,11 +3,11 @@ function cekmenu() {
     var tampil = document.getElementById("hasilmenu");
 
     if (menu == "Coffe") {
-        tampil.innerHTML = "Kopsus Desire: 17.000.";
-    } else if (menu == "Tea") {
-        tampil.innerHTML = "Thai Tea: 15.000.";
+        tampil.innerHTML = "Shakerato: 13.000.";
+    } else if (menu == "Signature") {
+        tampil.innerHTML = "Butter Scotch: 20.000.";
     } else if (menu == "Snack") {
-        tampil.innerHTML = "Mix Plater: 10.000.";
+        tampil.innerHTML = "Bread: 10.000.";
     } else {
         tampil.innerHTML = "Silahkan pilih menu terlebih dahulu!";
     }
